@@ -80,7 +80,7 @@ const LinearStepper = () => {
     <div>
       <Typography component="h1" variant="h4" align="center">
 
-        Flight Reservation Form (Using Formik)
+        Flight Booking System <br></br> (Rinor)
       </Typography>
       <Stepper
         alternativeLabel

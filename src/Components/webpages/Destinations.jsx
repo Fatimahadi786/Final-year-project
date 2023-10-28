@@ -68,7 +68,13 @@ const destinations = [
 
 const DestinationList = () => {
   return (
+    <>
+    <div className="centered-text">
+    <h1>Popular Countries of the World</h1>
+    <h4>Explore these popular countries known for their unique charm and attractions.</h4>
+  </div>
     <div className="destination-list">
+  
       {destinations.map((destination) => (
         <div key={destination.id} className="destination">
           <img src={destination.image} alt={destination.name} />
@@ -79,6 +85,7 @@ const DestinationList = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 

@@ -10,7 +10,7 @@ function InfantPassengerDetailAccordion({ title, subtitle, index }) {
   return (
     <div>
  
-            <Accordion style={{ backgroundColor: "#424242", margin: "10px 0px" }}>
+            <Accordion style={{ backgroundColor: "white", margin: "10px 0px" }}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"

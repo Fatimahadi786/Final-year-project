@@ -12,7 +12,7 @@ function AdultPassengerDetailAccordion({ title, subtitle, index }) {
     <div>
       <Accordion
         style={{
-          backgroundColor: "#424242",
+          backgroundColor: "white",
           borderRadius: "10px",
           borderColor: "error.main",
           margin: "10px 0px",

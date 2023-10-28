@@ -17,7 +17,7 @@ const ConfirmBooking = () => {
         Confirm Booking
       </Typography>
 
-      <ReactImageUploading
+      {/* <ReactImageUploading
         multiple
         value={images}
         onChange={ImageOnChange}
@@ -54,9 +54,9 @@ const ConfirmBooking = () => {
             ))}
           </div>
         )}
-      </ReactImageUploading>
+      </ReactImageUploading> */}
     </React.Fragment>
   );
 };
-
-export default ConfirmBooking;
+ 
+export default ConfirmBooking;    

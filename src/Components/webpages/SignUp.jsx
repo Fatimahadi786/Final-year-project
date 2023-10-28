@@ -27,14 +27,22 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 
 function Register() {
     const [open, setOpen] = React.useState(false);
-
-    const handleClose = (event, reason) => {
-        if (reason === 'clickaway') {
-            return;
-        }
-
-        setOpen(false);
-    };
+//     const handleClose = (event, reason) => {
+//     console.log('handleClose called'); // Add this for debugging
+//     if (reason === 'clickaway') {
+//         return;
+//     }
+//     setOpen(false); // Make sure this is being called
+// };
+const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+  
+    setOpen(false);
+    console.log('handleClose called')
+  };
+  
 
     const [inputs, setInputs] = useState({
         username: '',
