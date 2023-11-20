@@ -13,7 +13,6 @@ import Lounge from '../Lounge/Lounge'
 import Support from '../Support/Support'
 import Subscribers from '../Subscribers/Subscribers'
 import Footer from '../Footer/Footer'
-import LinearStepper from '../FlightBooking/LinearStepper/LinearStepper';
 const Home = () => {
      
  
@@ -36,8 +35,15 @@ const Home = () => {
             </div>     
         </div>
     </section>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
     {/* <Search/> */}
-    <LinearStepper/>
+   
     <Support/>
     <Travelers/>
     <Info/>

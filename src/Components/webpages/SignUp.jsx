@@ -70,23 +70,29 @@ const handleClose = (event, reason) => {
     };
 
     const handleSubmit = event => {
+        event.preventDefault();
+    
         const userObject = {
             username: inputs.username,
             phoneNo: inputs.phoneNo,
             email: inputs.email,
-            userPassword: inputs.password
-        }
+            verifypassword: inputs.verifypassword,
+            password: inputs.password   
+        };
+    
         console.log(userObject);
-
+    
         axios.post('http://localhost:8800/api/auth/sign-up', userObject)
             .then((res) => {
-                console.log(res.data)
+                console.log("in Axios")
+                console.log(res.data);
                 setOpen(true);
-            }).catch((error) => {
-                console.log(error)
+            })
+            .catch((error) => {
+                console.error('Error:', error);
             });
-        event.preventDefault()
-    }
+    };
+    
 
     const email_error = inputs.verifyemail !== inputs.email
 
@@ -197,7 +203,7 @@ const handleClose = (event, reason) => {
                         </FormControl>
                     </Stack>
 
-                    <Button variant='contained' type='submit'>Sign up</Button>
+                    <Button variant='contained' type='submit' onSubmit={handleSubmit}>Sign up</Button>
                     <Stack direction='row' spacing={1}>
                         <Typography color={'GrayText'} variant='caption'>Already a user?</Typography>
                         <Link href='/Login' variant='caption'>Login</Link>

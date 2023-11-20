@@ -43,7 +43,10 @@ const removeNavbar = () =>{
       </li>
       
       <li className="navItem">
-        <Link to="/destinations" className="navlink">Destinations</Link>
+        <Link to="/flightlist" className="navlink">Flights</Link>
+      </li>
+      <li className="navItem">
+        <Link to="/bookingForm" className="navlink">Booking</Link>
       </li>
       
       <li className="navItem">
